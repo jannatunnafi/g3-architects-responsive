@@ -14,16 +14,28 @@
     display: flex;
   }
 
+  .navbar,.banner{width: 1200px;
+    margin: 0 auto;
+
+  }
+
   /* dark 2 */
 
   .text-grey{
     color: #424242;
   }
 
-  /* .navbar,.banner{
-    width: 1440px;
-    margin:0 auto;
-  } */
+  .btn-primary{
+    background-color: rgb(255, 144, 14);
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 21px 35px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+  }
+
+  
 
   /* dark 3 */
 
@@ -33,11 +45,17 @@
     background-color: rgba(255, 144, 14, 0.1);
   }
 
+  .brand{
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
   /* navbar styles */
 
   .nav-item{
    list-style: none;
    margin-right: 40px;
+ 
     
   }
 
@@ -49,6 +67,56 @@ font-size: 18px;
 font-weight: 500;
   }
 
-  .navbar{justify-content: space-between;}
+ 
+
+  .navbar{
+   
+    justify-content: space-between;
+    
+  align-items: center;
+
+
+}
+
+/* banner related styles */
+
+.banner-content{
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.banner-title{
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.banner-image{
+width: 100%;
+}
+
+
+/* responsive styles */
+
+@media screen and (max-width:576px) {
+
+  .navbar,.nav-links{
+    flex-direction: column;
+  }
+
+  .navbar,.banner{width: 500px;
+    margin: 0 auto;
+
+  }
+
+
+  
+  
+}
+
+
+
+
 
   
